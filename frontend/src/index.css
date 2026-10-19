@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  padding: 1rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #cbd5e1;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #334155;
+  border: 1px solid #475569;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 12rem;
+}
+
+input[type="file"]:hover,
+textarea:hover {
+  background: #475569;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.success-text {
+  color: #4ade80;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.helper-text {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  width: 100%;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+button:not(:disabled) {
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  color: #fff;
+}
+
+button:not(:disabled):hover {
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
+}
+
+button:disabled {
+  background: #475569;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.error-box {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  color: #fca5a5;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.results {
+  margin-top: 2rem;
+  background: #1e293b;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.results h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.score-box {
+  background: rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(37, 99, 235, 0.5);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.score-box p {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.score-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+.summary-box {
+  background: #334155;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-box h3 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.summary-box p {
+  color: #cbd5e1;
+}
+
+.strengths, .gaps {
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.strengths {
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.5);
+}
+
+.strengths h3 {
+  color: #4ade80;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.gaps {
+  background: rgba(251, 146, 60, 0.2);
+  border: 1px solid rgba(251, 146, 60, 0.5);
+}
+
+.gaps h3 {
+  color: #fb923c;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: #cbd5e1;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.strengths li::before {
+  content: "✓";
+  color: #4ade80;
+  font-weight: bold;
+}
+
+.gaps li::before {
+  content: "!";
+  color: #fb923c;
+  font-weight: bold;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
